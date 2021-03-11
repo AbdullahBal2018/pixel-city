@@ -12,6 +12,9 @@
 		2C1B812725F556D9008C89A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1B812525F556D9008C89A4 /* Main.storyboard */; };
 		2C1B812925F556DB008C89A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1B812825F556DB008C89A4 /* Assets.xcassets */; };
 		2C1B812C25F556DB008C89A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1B812A25F556DB008C89A4 /* LaunchScreen.storyboard */; };
+		2C880B4225F77E2500825913 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C880B4125F77E2500825913 /* PhotoCell.swift */; };
+		2C880B4525F8C9CA00825913 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C880B4425F8C9CA00825913 /* Constants.swift */; };
+		2C880B4725FA02AB00825913 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C880B4625FA02AB00825913 /* PopVC.swift */; };
 		2CB70A3E25F6369200A643F5 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB70A3D25F6369200A643F5 /* DroppablePin.swift */; };
 		FDD50CAD8A636005AC12498C /* Pods_pixel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F4FB4AAAB9B2C395AD0C30 /* Pods_pixel_city.framework */; };
 /* End PBXBuildFile section */
@@ -23,6 +26,9 @@
 		2C1B812625F556D9008C89A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C1B812825F556DB008C89A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C1B812B25F556DB008C89A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C880B4125F77E2500825913 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		2C880B4425F8C9CA00825913 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2C880B4625FA02AB00825913 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		2CB70A3D25F6369200A643F5 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		44AF733A448EB43DA166662D /* Pods-pixel-city.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.debug.xcconfig"; sourceTree = "<group>"; };
 		92F4FB4AAAB9B2C395AD0C30 /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +68,7 @@
 		2C1B812025F556D9008C89A4 /* pixel-city */ = {
 			isa = PBXGroup;
 			children = (
+				2C880B4325F8C9B100825913 /* Utilities */,
 				2CB70A3C25F6367900A643F5 /* View */,
 				2C1B813325F557DE008C89A4 /* Controller */,
 				2C1B812125F556D9008C89A4 /* AppDelegate.swift */,
@@ -76,14 +83,24 @@
 			isa = PBXGroup;
 			children = (
 				2C1B812325F556D9008C89A4 /* MapVC.swift */,
+				2C880B4625FA02AB00825913 /* PopVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C880B4325F8C9B100825913 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2C880B4425F8C9CA00825913 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		2CB70A3C25F6367900A643F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2CB70A3D25F6369200A643F5 /* DroppablePin.swift */,
+				2C880B4125F77E2500825913 /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C880B4525F8C9CA00825913 /* Constants.swift in Sources */,
+				2C880B4225F77E2500825913 /* PhotoCell.swift in Sources */,
 				2C1B812425F556D9008C89A4 /* MapVC.swift in Sources */,
 				2CB70A3E25F6369200A643F5 /* DroppablePin.swift in Sources */,
 				2C1B812225F556D9008C89A4 /* AppDelegate.swift in Sources */,
+				2C880B4725FA02AB00825913 /* PopVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
